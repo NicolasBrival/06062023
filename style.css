@@ -1,0 +1,114 @@
+/* */
+
+/* Police(s)  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* la police doit etre utilisee avec des guillements : 'Roboto' */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto';
+    /* background: url("") */
+}
+
+.container{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0;
+    margin: 30px auto;
+}
+
+ul{
+    margin-top: 70%;
+}
+
+li{
+    display: inline;
+    font-size:32px;
+    
+}
+
+#font-awesome-icons-zone{
+    background: linear-gradient(rgb(0, 132, 255), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    height: 600px;
+    width: 400px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.font-awesome-icons-zone__item{
+    margin: 10px;
+}
+
+.fa-twitter{
+    color: rgb(0, 132, 255);
+    animation: twitter-move 8000ms ease-out infinite;
+}
+
+.fa-dollar{
+    color: rgb(5, 139, 27);
+    animation: dollar-move 8000ms ease-out infinite;
+}
+
+.fa-heart{
+    color: red;
+    animation: heart-move 8000ms ease-out infinite;
+}
+
+.fa-envelope{
+    color: rgb(233, 205, 49);
+    animation: envelope-move 6000ms ease-out infinite;
+}
+
+.fa-comment-o{
+    color: grey;
+    animation: comment-o-move 6000ms ease-out infinite 500ms;
+}
+
+
+@keyframes twitter-move {
+    25% { transform: scale(3) translate(30px, 80px) rotate(-180deg); }
+    50% { transform: scale(3) translate(80px, 0px); }
+    62.5% { transform: scale(3) translate(50px, -85px) rotate(360deg); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+@keyframes dollar-move {
+    25% { transform: scale(3) translate(-30px, -80px) rotate(90deg); }
+    50% { transform: scale(3) translate(70px, -80px) rotate(180deg); }
+    75% { transform: scale(3) translate(70px, 80px) rotate(240deg); }
+    82.5% { transform: scale(3) translate(-30px, 80px) rotate(300deg); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  @keyframes heart-move {
+    15% { transform: scale(3) translate(-30px, -80px) ; }
+    50% { transform: scale(2) translate(70px, -80px) ; }
+    100% { transform:  translate(0px, 0px) ; }
+    
+  }
+
+  @keyframes envelope-move {
+    50% { transform: scale(3) translate(-60px, 40px); }
+    62.5% { transform: scale(3) translate(0px, 0px); }
+    75% { transform: scale(3) translate(-30px, 0px); }
+    100% { transform: translate(0px, 0px); }
+    
+  }
+
+  @keyframes comment-o-move {
+    10% { transform: scale(3) translate(0, 0) ; }
+    75% { transform: scale(3) translate(-40px, 60px) ; }
+    100% { transform: scale(3) translate(0px, 0px) ; }
+  }
